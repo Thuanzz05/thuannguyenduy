@@ -1,0 +1,142 @@
+/* About Section Styling */
+.about-section {
+    padding: 40px 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    margin-bottom: 40px;
+}
+
+.section-title {
+    text-align: center;
+    color: #ff6b6b;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #ff6b6b;
+}
+
+.about-content {
+    padding: 0 20px;
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+    color: #666;
+}
+
+.about-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Values Section Styling */
+.values-section {
+    padding: 40px 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    margin-bottom: 40px;
+}
+
+.values-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.value-card {
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.value-card i {
+    font-size: 36px;
+    color: #ff6b6b;
+    margin-bottom: 20px;
+}
+
+.value-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.value-card p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .values-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .value-card {
+        width: 100%;
+        max-width: 500px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 24px;
+    }
+    
+    .about-content p {
+        font-size: 15px;
+    }
+    
+    .value-card {
+        padding: 25px 15px;
+    }
+    
+    .value-card i {
+        font-size: 32px;
+    }
+    
+    .value-card h3 {
+        font-size: 18px;
+    }
+    
+    .value-card p {
+        font-size: 14px;
+    }
+}
+
+
+
+
