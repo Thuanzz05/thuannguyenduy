@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập / Đăng Ký</title>
+    <link rel="stylesheet" href="styles/styleLogin-register.css">
+    <link rel="icon" href="images/iconLogin.png" type="image/x-icon">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Chào mừng</h2>
+        </div>
+        
+        <div class="tab-header">
+            <button class="tab-button active" id="login-tab">Đăng Nhập</button>
+            <button class="tab-button" id="register-tab">Đăng Ký</button>
+        </div>
+        
+        <div class="form-container">
+            <!-- Đăng Nhập Form -->
+            <form class="form active" id="login-form">
+                <div class="form-group">
+                    <label for="login-email">Email hoặc tên người dùng</label>
+                    <input type="text" class="form-control" id="login-email" placeholder="Nhập email hoặc tên người dùng">
+                </div>
+                
+                <div class="form-group">
+                    <label for="login-password">Mật khẩu</label>
+                    <input type="password" class="form-control" id="login-password" placeholder="Nhập mật khẩu">
+                </div>
+                
+                <div class="remember-me">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Nhớ đăng nhập</label>
+                </div>
+                
+                <div class="forgot-password">
+                    <a href="#">Quên mật khẩu?</a>
+                </div>
+                
+                <button type="submit" class="btn">Đăng Nhập</button>
+            </form>
+            
+            <!-- Đăng Ký Form -->
+            <form class="form" id="register-form">
+                <div class="form-group">
+                    <label for="register-name">Họ tên</label>
+                    <input type="text" class="form-control" id="register-name" placeholder="Nhập họ tên">
+                </div>
+                
+                <div class="form-group">
+                    <label for="register-email">Email</label>
+                    <input type="email" class="form-control" id="register-email" placeholder="Nhập email">
+                </div>
+                
+                <div class="form-group">
+                    <label for="register-password">Mật khẩu</label>
+                    <input type="password" class="form-control" id="register-password" placeholder="Nhập mật khẩu">
+                </div>
+                
+                <div class="form-group">
+                    <label for="register-confirm">Xác nhận mật khẩu</label>
+                    <input type="password" class="form-control" id="register-confirm" placeholder="Nhập lại mật khẩu">
+                </div>
+                
+                <button type="submit" class="btn">Đăng Ký</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="scripts/scriptLogin-register.js"></script>
+</body>
+</html>
